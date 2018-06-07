@@ -29,7 +29,7 @@ darker shade (very top of header):
 
 body {
     width: 100%;
-    background: url("images/mainbg.png");
+    background: #1B1D23;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue","Lucida Grande";
     color: #ddd;
 }
@@ -150,7 +150,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 #header {
 	width: 100%;
 	padding: 0;
-	height: 70px; /* This defines the height of the whole top part. */
+	height: 140px; /* This defines the height of the whole top part. */
 }
 
 #adbar {
@@ -189,7 +189,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 #logo {
 	width: 205px;
     height: 30px;
-	background: url('https://pornbay.org/static/styles/modern_dark/images/logo.png') no-repeat bottom;
+	background: url(https://pornbay.org/static/styles/modern_dark/images/logo.png) no-repeat bottom;
 	margin: 5px auto 0px auto;
 	position: relative;
 	float: left;
@@ -206,6 +206,61 @@ ul.thin li { margin:0px 0px; padding:0px; }
 	border: none;
 }
 
+
+
+span.infinity {
+    font-weight: bold;
+}
+
+#stats_block {
+    font-size: 0.9em;
+    text-align: right;
+    color: white;
+    height: 70px;
+    width: 300px;
+    top: 8px;
+    position:absolute;
+    right: 20px ;
+}
+
+#stats_block ul li, #header_bottom ul li {
+    margin: 0 0.1em;
+    line-height: 18px;
+    padding: 0px;
+    display:inline;
+}
+
+#stats_block a, #stats_block a:visited, #header_bottom a, #header_bottom a:visited, #userinfo_username li ul, #userinfo_username li ul li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #ccc;
+}
+
+#stats_block a:hover, #header_bottom a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#header_bottom {
+    background: #1B1D23;
+    position: relative;
+    padding: 3px 0px;
+    min-width: 850px;
+    height: 20px; /* 26px */
+    top: 110px;
+}
+
+#header_bottom ul li {
+    margin: 0px;
+}
+
+#header_bottom ul li ul li {
+    white-space: nowrap;
+}
+
+
+
+
 #menu{
 	position:relative;
 	margin: 5px auto 10px auto;
@@ -221,71 +276,13 @@ ul.thin li { margin:0px 0px; padding:0px; }
     .potato-menu-item {
 	color: #f9f9f9 !important;
 	font-size:12px;
-	background: url("images/mainbg.png");
+	background: #1B1D23;
+  text-shadow: none;
     }
     .potato-menu-hover {
-        background: url("images/dropdownhover.png");
+        background: #61AFEF;
     }
 /* END DROPDOWN STUFF */
-
-
-span.infinity {
-    font-weight: bold;
-}
-
-#stats_block {
-    font-size: 0.9em;
-    text-align: right;
-    color: white;
-    height: 70px;
-    width: 300px;
-    top: 50px;
-    position:absolute;
-    right: 20px ;
-}
-
-#stats_block ul li, #header_bottom ul li {
-    margin: 0 0.1em;
-    line-height: 18px;
-    padding: 0px;
-    display:inline;
-}
-#header_bottom ul li {
-    margin: 0px;
-}
-
-#header_bottom ul li ul li {
-    white-space: nowrap;
-}
-
-table.userinfo_stats, table.userinfo_stats tr {
-    background:none;
-    background-color:transparent;
-}
-table.userinfo_stats td {
-    padding:0px 3px;
-}
-
-
-#stats_block a, #stats_block a:visited, #header_bottom a, #header_bottom a:visited, #userinfo_username li ul, #userinfo_username li ul li a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: #ccc;
-}
-
-#stats_block a:hover, #header_bottom a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-#header_bottom {
-    background: url("images/mainbg.png") #1c1c1c;
-    position: relative;
-    padding: 3px 0px;
-    min-width: 850px;
-    height: 20px; /* 26px */
-    top: 210px;
-}
 
 #footer_bottom {
     height: 24px;
@@ -307,6 +304,13 @@ table.userinfo_stats td {
     margin: 0 0 0 10px;
 }
 
+table.userinfo_stats, table.userinfo_stats tr {
+    background:none;
+    background-color:transparent;
+}
+table.userinfo_stats td {
+    padding:0px 3px;
+}
 
 #userinfo_username li ul a {
     display: block;
@@ -332,7 +336,7 @@ table.userinfo_stats td {
     display: none;
     position: absolute;
     left: 7px;
-    background: url("images/mainbg.png");
+    background: #1B1D23;
     z-index: 10;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
@@ -348,7 +352,7 @@ table.userinfo_stats td {
 }
 
 #userinfo_username li ul li a:hover, #userinfo_tools li ul li a:hover {
-      background: url("images/dropdownhover.png");
+      background: #61AFEF;
 }
 
 #userinfo_username {
@@ -363,7 +367,7 @@ table.userinfo_stats td {
 #nav_userinfo, #nav_tools {
     padding-right: 8px !important;
     margin: 0px 7px !important;
-    background-image: url(images/dropdown_arrow.png);
+    background-image: url(https://pornbay.org/static/styles/modern_dark/images/dropdown_arrow.png);
     background-repeat:no-repeat;
     background-position: right center;
 }
@@ -400,7 +404,7 @@ span.stat {
 
 #searchbars {
 	position: absolute;
-	top: 170px;
+	top: 70px;
 	width: 100%;
 	text-align: center;
 	padding: 4px 0px;
@@ -432,7 +436,7 @@ span.stat {
 
 /*
 #searchbars input {
-    background: white url('images/mglass.png') no-repeat scroll 98% 0%;
+    background: white url(https://pornbay.org/static/styles/modern_dark/images/mglass.png) no-repeat scroll 98% 0%;
     border: 0px;
     padding: 1px 5px 1px 5px;
     margin: 0px 1px 0px 1px;
@@ -682,6 +686,7 @@ input.hidden {
     min-width: 960px;
     margin-left:auto;
     margin-right:auto;
+    width: 96%;
 }
 
 h2 {
@@ -781,7 +786,7 @@ p.min_padding {
 
 .pad {
     padding: 0em;
-    color: #ababab;
+    color: #ABB2BF;
 }
 
 .vertical_space {
@@ -909,40 +914,40 @@ table.boxstat td:first-child {
 }
 
 .icon_warning {
-    background: url('images/warn_still.gif') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/warn_still.gif) no-repeat center center;
 }
 .icon_okay {
-    background: url('images/okay.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/okay.png) no-repeat center center;
 }
 
 .icon_disk_none {
-    background: url('images/disk.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/disk.png) no-repeat center center;
 }
 
 .icon_disk_leech {
-    background: url('images/diskdown.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/diskdown.png) no-repeat center center;
 }
 
 .icon_disk_seed {
-    background: url('images/diskup.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/diskup.png) no-repeat center center;
 }
 
 .icon_disk_grabbed {
-    background: url('images/diskgrabbed.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/diskgrabbed.png) no-repeat center center;
 }
 .icon_disk_snatched {
-    background: url('images/disksnatched.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/disksnatched.png) no-repeat center center;
 }
 
 .icon_bookmarked {
-    background: url('images/star16.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/star16.png) no-repeat center center;
 }
 .icon_watched {
-    background: url('images/watched.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/watched.png) no-repeat center center;
 }
 
 #top_info .icon_warning {
-    background: url('images/warning.gif') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/warning.gif) no-repeat center center;
 }
 
 #staff_tools .icon, .torrent .icon {
@@ -1306,13 +1311,13 @@ ul.poll li.graph {
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url('images/show.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/show.png) no-repeat center center;
 }
 
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url('images/hide.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/hide.png) no-repeat center center;
 }
 
 .show_torrents_link {
@@ -1570,20 +1575,20 @@ div.tagtable {
 }
 
 /* Layout (Forums) */
-.last_post {width: 15px; height: 15px; background: url(images/go_last_read.png) no-repeat center center; margin-left: 5px;}
-.last_read {width: 15px; height: 15px; background: url(images/go_last_read.png) no-repeat center center; margin-left: 5px;}
+.last_post {width: 15px; height: 15px; background: url(https://pornbay.org/static/styles/modern_dark/images/go_last_read.png) no-repeat center center; margin-left: 5px;}
+.last_read {width: 15px; height: 15px; background: url(https://pornbay.org/static/styles/modern_dark/images/go_last_read.png) no-repeat center center; margin-left: 5px;}
 .last_read a, .last_post a { border: none; width: 100%; height: 100%; display: block; }
 .last_read a:hover, .last_post a:hover { border: none; }
-.colhead_dark .last_read { background-image:url(images/go_last_read.png); }
+.colhead_dark .last_read { background-image:url(https://pornbay.org/static/styles/modern_dark/images/go_last_read.png); }
 
-.unread_locked_sticky{background: url(images/locked_sticky_unread.png) no-repeat center center;}
-.read_locked_sticky{background: url(images/locked_sticky_read.png) no-repeat center center;}
-.read_sticky{background: url(images/sticky_read.png) no-repeat center center;}
-.unread_sticky{background: url(images/sticky_unread.png) no-repeat center center;}
-.unread_locked{background: url(images/locked_unread.png) no-repeat center center;}
-.read_locked{background: url(images/locked_read.png) no-repeat center center;}
-.unread{background: url(images/unread.png) no-repeat center center;}
-.read{background: url(images/read.png) no-repeat center center;}
+.unread_locked_sticky{background: url(https://pornbay.org/static/styles/modern_dark/images/locked_sticky_unread.png) no-repeat center center;}
+.read_locked_sticky{background: url(https://pornbay.org/static/styles/modern_dark/images/locked_sticky_read.png) no-repeat center center;}
+.read_sticky{background: url(https://pornbay.org/static/styles/modern_dark/images/sticky_read.png) no-repeat center center;}
+.unread_sticky{background: url(https://pornbay.org/static/styles/modern_dark/images/sticky_unread.png) no-repeat center center;}
+.unread_locked{background: url(https://pornbay.org/static/styles/modern_dark/images/locked_unread.png) no-repeat center center;}
+.read_locked{background: url(https://pornbay.org/static/styles/modern_dark/images/locked_read.png) no-repeat center center;}
+.unread{background: url(https://pornbay.org/static/styles/modern_dark/images/unread.png) no-repeat center center;}
+.read{background: url(https://pornbay.org/static/styles/modern_dark/images/read.png) no-repeat center center;}
 
 table.forum_index {
     font-size: 0.9em;
@@ -1769,7 +1774,7 @@ ul .invitetree {
 .left_poll {
     width: 2px;
     height: 9px;
-    background: url('images/bar_left.gif') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/bar_left.gif) no-repeat center center;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -1777,7 +1782,7 @@ ul .invitetree {
 
 .center_poll {
     height: 9px;
-    background: url('images/bar.gif') repeat;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/bar.gif) repeat;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -1786,7 +1791,7 @@ ul .invitetree {
 .right_poll {
     width: 2px;
     height: 9px;
-    background: url('images/bar_right.gif') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/bar_right.gif) no-repeat center center;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -1888,7 +1893,7 @@ span.postlink {
     display:block;
     width: 10px;
     height: 10px;
-    background: url('images/viewpost.gif') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/viewpost.gif) no-repeat center center;
     vertical-align: bottom;
 }
 a.postlink {
@@ -2233,7 +2238,7 @@ img.win.flash {
     height:60px;
     position:absolute;
     left:-50px;
-    background: url('images/betchip.png') no-repeat center center;
+    background: url(https://pornbay.org/static/styles/modern_dark/images/betchip.png) no-repeat center center;
 }
 .chip span {
     position:relative;
@@ -2753,7 +2758,7 @@ blockquote.bbcode.error code.error {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
         border: 1px solid #666666;
-        background: #888888 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+        background: #888888;
         font-weight: normal;
         color: #333333;
 }
