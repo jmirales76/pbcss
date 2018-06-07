@@ -1,7 +1,5 @@
 /* Layout (Torrents page) */
 
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=PT+Mono);
 
 .cats_col { padding: 0; }
 .category { width: 28px; height: 28px; margin: 0; padding: 0; }
@@ -32,8 +30,7 @@ darker shade (very top of header):
 body {
     width: 100%;
     background: url("images/mainbg.png");
-    /* font: normal 11pt "Lucida Grande", Helvetica, Arial, Verdana, sans-serif; */
-    font: normal 12pt "PT Sans", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue","Lucida Grande";
     color: #ddd;
 }
 
@@ -69,10 +66,6 @@ a:hover, .linkbox a:hover, .permission_container a:hover,
 
 h1,h2,h3,h4 {
     margin: 5px 0px;
-}
-
-h2 {
-    text-align: center;
 }
 
 h4 {
@@ -157,14 +150,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 #header {
 	width: 100%;
 	padding: 0;
-	height: 240px; /* This defines the height of the whole top part. */
-}
-
-#main-logo {
-    margin: 20px auto 0 auto;
-    width: 367px;
-    height: 200px;
-    background: url('images/empornium-black-header.png') no-repeat center center;
+	height: 70px; /* This defines the height of the whole top part. */
 }
 
 #adbar {
@@ -181,8 +167,8 @@ ul.thin li { margin:0px 0px; padding:0px; }
 
 #wrapper {
 	margin: 0px auto;
-	background: url('images/background.png') top center repeat;
-	border: 1px solid #000;
+	background: #21252B;
+	border: 1px solid #181A1F;
 }
 
 #footer {
@@ -202,8 +188,8 @@ ul.thin li { margin:0px 0px; padding:0px; }
 
 #logo {
 	width: 205px;
-    height: 200px;
-	background: url('images/logo.png') no-repeat center center;
+    height: 30px;
+	background: url('https://pornbay.org/static/styles/modern_dark/images/logo.png') no-repeat bottom;
 	margin: 5px auto 0px auto;
 	position: relative;
 	float: left;
@@ -212,7 +198,7 @@ ul.thin li { margin:0px 0px; padding:0px; }
 #logo a {
 	border: none;
 	width: 220px;
-	height: 200px;
+	height: 30px;
 	display: block;
 }
 
@@ -552,6 +538,7 @@ span.stat {
     font-weight:bold;
     font-size:0.88em;
     color: white;
+    background: #282C34;
     position: absolute;
     border-radius: 10px;       /* FF9+ IE9+ */
     -moz-border-radius: 10px; /* for FF5 */
@@ -566,12 +553,6 @@ span.stat {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-
-    background: #404; /* old browsers */
-    background: -moz-linear-gradient(top, #A1A 0%, #404 100%); /* firefox    #0074b7 - #004b9d */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A1A), color-stop(100%,#404)); /* webkit */
-    background-image: -o-linear-gradient(top, rgb(160, 16, 160) 0%, rgb(64, 0, 64) 100%); /* opera */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A1A', endColorstr='#404',GradientType=0 ); /* ie */
 }
 
 .blend {
@@ -711,14 +692,7 @@ h2 {
     padding: 5px 40px;
     height: 33px;
     border: 1px solid BLACK !important;
-    background: #444444; /* Old browsers */
-    background: -moz-linear-gradient(top,  #444444 0%, #444444 50%, #2d2d2d 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(50%,#444444), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #444444 0%,#444444 50%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #444444 0%,#444444 50%,#2d2d2d 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #444444 0%,#444444 50%,#2d2d2d 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #444444 0%,#444444 50%,#2d2d2d 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+    background: #282C34;
     font-size:1.1em !important;
 /*
 	border-radius: 14px;
@@ -1055,14 +1029,7 @@ table.boxstat td:first-child {
     border-top: 1px solid black !important;
     border-left: 1px solid black !important;
     border-right: 1px solid black !important;
-    background: #3d3d3d; /* Old browsers */
-    background: -moz-linear-gradient(top,  #3d3d3d 0%, #3d3d3d 50%, #2d2d2d 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d3d3d), color-stop(50%,#3d3d3d), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #3d3d3d 0%,#3d3d3d 50%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #3d3d3d 0%,#3d3d3d 50%,#2d2d2d 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #3d3d3d 0%,#3d3d3d 50%,#2d2d2d 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #3d3d3d 0%,#3d3d3d 50%,#2d2d2d 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d3d3d', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+    background: #282C34;
 
 	font-size:1.1em !important;
 	font-weight: normal;
@@ -1372,14 +1339,6 @@ ul.poll li.graph {
     height: 38px;
 
 background: #686868; /* Old browsers */
-background: -moz-linear-gradient(top,  #686868 0%, #686868 50%, #565656 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(50%,#686868), color-stop(100%,#565656)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #686868 0%,#686868 50%,#565656 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #686868 0%,#686868 50%,#565656 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #686868 0%,#686868 50%,#565656 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #686868 0%,#686868 50%,#565656 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#565656',GradientType=0 ); /* IE6-9 */
-
     font-size:1.1em !important;
     font-weight: normal;
     -moz-border-radius: 0 0 5px 5px;
@@ -2440,12 +2399,7 @@ img.win.flash {
         border-left: 1px solid #c7c7c7 !important;
         border-right: 1px solid #c7c7c7 !important;
 
-        background: #f8f8f8; /* old browsers */
-	background: -moz-linear-gradient(top, #FFFFFF 0%, #F5F5F5 80%, #e9e9e9 100%); /* firefox */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(80%,#F5F5F5), color-stop(100%,#e9e9e9)); /* webkit */
-	background-image: -o-linear-gradient(top, rgb(255,255,255) 0%, rgb(245,245,245) 80%, rgb(233,233,233) 100%); /* opera */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#e9e9e9' ); /* ie */
-
+        background: #282C34;
 	-moz-box-shadow:inset 0px 0px 3px #fff;
   	-webkit-box-shadow:inset 0px 0px 3px #fff;
   	box-shadow:inset 0px 0px 3px #fff;
